@@ -12,9 +12,6 @@ from django_rq.utils import get_statistics
 
 logger = logging.getLogger(__name__)
 
-netbox_version = version.parse(settings.VERSION)
-
-
 def metric_rq():
     """Return stats about RQ Worker in Prometheus Metric format.
 
